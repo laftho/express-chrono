@@ -1,6 +1,6 @@
 {
   "name": "express-chrono",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple hrtime chronometer with Expressjs middleware. Request timer, process timer.",
   "main": "index.js",
   "scripts": {
