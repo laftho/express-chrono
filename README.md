@@ -31,8 +31,8 @@ app.listen(3000);
 *header* - boolean or string of the header name. Defaults to false. If true the default header is X-Response-Time
 
 *format* 
- * *s* - seconds, default, e.g `1.029382120s`
- * *ms* - milliseconds, e.g `1029.382120ms`
+ * *s* - seconds, e.g `1.029382120s`
+ * *ms* - milliseconds, default, e.g `1029.382120ms`
  
 *suffix* - boolean, default false; include the second or millisecond suffix
 
@@ -72,14 +72,14 @@ app.listen(3000);
 
 const Chronometer = require("express-chrono").Chronometer;
  
- let chrono = new Chronometer({ format: "ms", suffix: true });
+ let chrono = new Chronometer({ format: "s", suffix: true });
  
  chrono.start();
  
  setTimeout(() => {
    chrono.stop();
    
-   console.log(chrono); // 100ms
+   console.log(chrono); // 0.100000000ms
  }, 100);
 
 ```
