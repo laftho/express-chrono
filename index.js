@@ -34,8 +34,8 @@ class Chronometer {
     }
 
     parse(format, suffix) {
-        format = (format === undefined) ? opts.format || "ms" : format;
-        suffix = (suffix === undefined) ? opts.suffix || false : suffix;
+        format = (format === undefined) ? this.options.format || "ms" : format;
+        suffix = (suffix === undefined) ? this.options.suffix || false : suffix;
 
         let val = null;
 
