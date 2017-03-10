@@ -28,7 +28,7 @@ app.listen(3000);
 
 **Options**
 
-*header* - boolean or string of the header name. Defaults to false. If true the default header is X-Response-Latency
+*header* - boolean or string of the header name. Defaults to false. If true the default header is X-Response-Time
 
 *format* 
  * *s* - seconds, default, e.g `1.029382120s`

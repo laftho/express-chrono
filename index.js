@@ -72,7 +72,7 @@ module.exports = (options) => {
     let opts = Object.assign({}, options);
 
     if (opts.header && !(typeof opts.header === 'string' || opts.header instanceof String)) {
-        opts.header = "X-Response-Latency";
+        opts.header = "X-Response-Time";
     } else {
         opts.header = false;
     }
